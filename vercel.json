@@ -5,116 +5,6 @@
   "outputDirectory": ".",
   "cleanUrls": false,
   "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/produto/:id",
-      "destination": "/produto.html?id=:id"
-    },
-    {
-      "source": "/categoria/:categoria",
-      "destination": "/catalogo.html?categoria=:categoria"
-    },
-    {
-      "source": "/pedidos/:id",
-      "destination": "/pedido.html?id=:id"
-    },
-    {
-      "source": "/checkout/concluido",
-      "destination": "/confirmacao.html"
-    },
-    {
-      "source": "/orcamento/concluido",
-      "destination": "/orcamento-concluido.html"
-    },
-    {
-      "source": "/ofertas",
-      "destination": "/catalogo.html?ordem=menor-preco"
-    },
-    {
-      "source": "/sobre",
-      "destination": "/sobre.html"
-    },
-    {
-      "source": "/trocas",
-      "destination": "/trocas.html"
-    },
-    {
-      "source": "/favoritos",
-      "destination": "/favoritos.html"
-    },
-    {
-      "source": "/entregas",
-      "destination": "/entregas.html"
-    },
-    {
-      "source": "/pedido",
-      "destination": "/pedido.html"
-    },
-    {
-      "source": "/carrinho",
-      "destination": "/carrinho.html"
-    },
-    {
-      "source": "/pedidos",
-      "destination": "/pedidos.html"
-    },
-    {
-      "source": "/privacidade",
-      "destination": "/privacidade.html"
-    },
-    {
-      "source": "/checkout",
-      "destination": "/checkout.html"
-    },
-    {
-      "source": "/orcamento",
-      "destination": "/orcamento.html"
-    },
-    {
-      "source": "/termos",
-      "destination": "/termos.html"
-    },
-    {
-      "source": "/ajuda",
-      "destination": "/ajuda.html"
-    },
-    {
-      "source": "/login",
-      "destination": "/login.html"
-    },
-    {
-      "source": "/trabalhe-conosco",
-      "destination": "/trabalhe-conosco.html"
-    },
-    {
-      "source": "/catalogo",
-      "destination": "/catalogo.html"
-    },
-    {
-      "source": "/servicos",
-      "destination": "/servicos.html"
-    },
-    {
-      "source": "/cadastro",
-      "destination": "/cadastro.html"
-    },
-    {
-      "source": "/explorar",
-      "destination": "/explorar.html"
-    },
-    {
-      "source": "/produto",
-      "destination": "/produto.html"
-    },
-    {
-      "source": "/pesquisa",
-      "destination": "/pesquisa.html"
-    },
-    {
-      "source": "/perfil",
-      "destination": "/perfil.html"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -132,6 +22,143 @@
           "value": "DENY"
         }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/produto/:id",
+      "destination": "/produto.html?id=:id",
+      "permanent": false
+    },
+    {
+      "source": "/categoria/:categoria",
+      "destination": "/catalogo.html?categoria=:categoria",
+      "permanent": false
+    },
+    {
+      "source": "/pedidos/:id",
+      "destination": "/pedido.html?id=:id",
+      "permanent": false
+    },
+    {
+      "source": "/checkout/concluido",
+      "destination": "/confirmacao.html",
+      "permanent": false
+    },
+    {
+      "source": "/orcamento/concluido",
+      "destination": "/orcamento-concluido.html",
+      "permanent": false
+    },
+    {
+      "source": "/ofertas",
+      "destination": "/catalogo.html?ordem=menor-preco",
+      "permanent": false
+    },
+    {
+      "source": "/sobre",
+      "destination": "/sobre.html",
+      "permanent": false
+    },
+    {
+      "source": "/trocas",
+      "destination": "/trocas.html",
+      "permanent": false
+    },
+    {
+      "source": "/favoritos",
+      "destination": "/favoritos.html",
+      "permanent": false
+    },
+    {
+      "source": "/entregas",
+      "destination": "/entregas.html",
+      "permanent": false
+    },
+    {
+      "source": "/pedido",
+      "destination": "/pedido.html",
+      "permanent": false
+    },
+    {
+      "source": "/carrinho",
+      "destination": "/carrinho.html",
+      "permanent": false
+    },
+    {
+      "source": "/pedidos",
+      "destination": "/pedidos.html",
+      "permanent": false
+    },
+    {
+      "source": "/privacidade",
+      "destination": "/privacidade.html",
+      "permanent": false
+    },
+    {
+      "source": "/checkout",
+      "destination": "/checkout.html",
+      "permanent": false
+    },
+    {
+      "source": "/orcamento",
+      "destination": "/orcamento.html",
+      "permanent": false
+    },
+    {
+      "source": "/termos",
+      "destination": "/termos.html",
+      "permanent": false
+    },
+    {
+      "source": "/ajuda",
+      "destination": "/ajuda.html",
+      "permanent": false
+    },
+    {
+      "source": "/login",
+      "destination": "/login.html",
+      "permanent": false
+    },
+    {
+      "source": "/trabalhe-conosco",
+      "destination": "/trabalhe-conosco.html",
+      "permanent": false
+    },
+    {
+      "source": "/catalogo",
+      "destination": "/catalogo.html",
+      "permanent": false
+    },
+    {
+      "source": "/servicos",
+      "destination": "/servicos.html",
+      "permanent": false
+    },
+    {
+      "source": "/cadastro",
+      "destination": "/cadastro.html",
+      "permanent": false
+    },
+    {
+      "source": "/explorar",
+      "destination": "/explorar.html",
+      "permanent": false
+    },
+    {
+      "source": "/produto",
+      "destination": "/produto.html",
+      "permanent": false
+    },
+    {
+      "source": "/pesquisa",
+      "destination": "/pesquisa.html",
+      "permanent": false
+    },
+    {
+      "source": "/perfil",
+      "destination": "/perfil.html",
+      "permanent": false
     }
   ]
 }

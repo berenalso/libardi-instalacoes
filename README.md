@@ -73,6 +73,6 @@ Abra `/testes/index.html` no servidor local: **37 verificações de regras**, se
 5. Publique e confira a branch/commit indicado no painel antes de testar. Não aceite a detecção da versão antiga como Vite.
 6. Teste Home, catálogo, `/produto.html?id=cabo25`, carrinho, checkout, recarregamento e uma URL anterior como `/produto/cabo25`.
 
-A `.vercelignore` exclui documentação, testes e arquivos de trabalho. As páginas usam URLs `.html`; os rewrites mantêm links antigos conhecidos. Em um servidor HTTP simples, utilize os links `.html`, pois os rewrites são específicos da Vercel. Não há fallback de SPA.
+A `.vercelignore` exclui documentação, testes e arquivos de trabalho. As páginas usam URLs `.html`; os redirecionamentos mantêm links antigos conhecidos. Em um servidor HTTP simples, utilize os links `.html`, pois os redirecionamentos são específicos da Vercel. Não há fallback de SPA.
 
 Documentação oficial: [configuração de projeto](https://vercel.com/docs/project-configuration/vercel-json) e [configuração de builds](https://vercel.com/docs/builds/configure-a-build).
