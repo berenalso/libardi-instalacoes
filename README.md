@@ -4,6 +4,8 @@ Trabalho de Criação de Sites da Escola Técnica Estadual Monteiro Lobato (CIMO
 
 A branch `versao-html-css-js` converte o projeto existente para **HTML5, CSS3 e JavaScript puro**. Não utiliza React, TypeScript, Vite, Tailwind, React Router, Vitest, bibliotecas JavaScript, instalação de pacotes ou compilação. A versão anterior permanece no histórico e na `main`; esta branch só deve ser mesclada após aprovação.
 
+Site publicado: [libardi-instalacoes-html.vercel.app](https://libardi-instalacoes-html.vercel.app/). Revisão: [Pull Request #1](https://github.com/berenalso/libardi-instalacoes/pull/1).
+
 ## Abrir para estudar
 
 Clone o repositório e selecione a branch:
@@ -66,7 +68,7 @@ Abra `/testes/index.html` no servidor local: **37 verificações de regras**, se
 
 ## Publicar na Vercel como site estático
 
-1. Importe este repositório e selecione **`versao-html-css-js`** para uma publicação separada ou de prévia. Não mescle na `main` para testar.
+1. Importe este repositório e selecione **`versao-html-css-js`** para uma publicação separada ou de prévia. Não mescle na `main` para testar. No projeto separado `libardi-instalacoes-html`, em Settings → Environments → Production → Branch Tracking, use `versao-html-css-js` para que novas alterações dessa branch atualizem seu domínio.
 2. Framework Preset: **Other**. Root Directory: raiz do repositório.
 3. Não configure comandos de instalação ou build. Diretório de saída: **`.`** (raiz).
 4. Use o `vercel.json` desta branch: `framework: null`, `buildCommand: null`, `installCommand: null`, `outputDirectory: "."`. Não há variáveis de ambiente.
