@@ -55,10 +55,25 @@ Altura de referência do iframe: 932 pixels. Home desktop, Home mobile e checkou
 
 A inspeção estática encontrou **25 HTMLs, 10 scripts da loja, nenhuma referência local ausente, nenhum `.ts`/`.tsx` e nenhum `package.json`**. Resultado em `verificacao-arquivos.json`. Os logs consultados mostraram ruído de uma extensão do navegador; não foi observado erro dos scripts da loja nesses fluxos.
 
-## Publicação e limites
+## Publicação e testes no domínio final
 
-O código foi enviado à branch solicitada. A `main` permanece sem merge. A Vercel leu `versao-html-css-js`, preset **Other**, comandos de instalação/build vazios e saída `.`. O deploy no projeto separado `libardi-instalacoes-html` parou em **Reauthenticate**, exigindo código enviado ao e-mail da conta.
+Site: [https://libardi-instalacoes-html.vercel.app/](https://libardi-instalacoes-html.vercel.app/). Projeto separado: `libardi-instalacoes-html`, equipe GymIA. A Vercel confirmou **Ready**, preset **Other**, sem instalação/build, saída `.` e zero funções de aplicação. Branch de produção desse projeto: **versao-html-css-js**. O repositório permanece com a `main` original; [PR #1](https://github.com/berenalso/libardi-instalacoes/pull/1) aberto, sem merge.
 
-**Até superar essa reautenticação, não há publicação desta versão nem teste de URL Vercel confirmado.** Depois do deploy é necessário verificar recursos, todos os documentos `.html`, rewrites das URLs antigas, reload de rotas e carrinho/checkout no domínio final. Não foi feita validação em aparelho físico.
+A reautenticação inicialmente interrompeu a criação, mas uma conferência posterior confirmou o deployment e o site acessível. O commit `a0df863` foi conferido como produção após a correção de URLs. Mudanças posteriores apenas registram estas evidências em documentação, excluída da hospedagem.
 
-A fidelidade visual usa o Figma e os estilos originais reaproveitados; não é uma comparação pixel a pixel de todas as telas. Há 25 fotos de produtos e um DPS com ilustração genérica identificada. Categorias sem produtos originais mostram estado vazio. A avaliação/apresentação do aluno e a nota final dependem do professor.
+No domínio público foram carregadas as mesmas **50 telas** (24 documentos comuns + 26 detalhes): título esperado, sem imagem quebrada observada e sem overflow horizontal em desktop. Os recursos HTML, CSS, JavaScript, imagens, ícones e fontes locais carregaram. Também foram testados os **27 caminhos anteriores** configurados na Vercel.
+
+Problema encontrado e corrigido no ambiente publicado: o rewrite de `/produto/cabo25` carregava o HTML sem disponibilizar o ID em `window.location.search`, produzindo “Produto não encontrado”. Foram usados redirecionamentos para as URLs HTML com os parâmetros. O reteste abriu `/produto.html?id=cabo25` com o nome correto e o recarregamento funcionou. Categoria, ofertas, detalhe de pedido e confirmação também preservaram os parâmetros; links antigos sem ID mostram o estado vazio previsto.
+
+| Fluxo público | Evidência |
+|---|---|
+| Carrinho e persistência | Dois produtos: R$ 199,80; aumentar cabo: R$ 389,70; reload manteve valor; diminuir voltou a R$ 199,80 |
+| Crédito em 7 parcelas | `DEMO-MVRWMS04`, total R$ 199,80, confirmação mantida após reload |
+| Débito | `DEMO-MVRWNSP9`, total R$ 199,80 e método correto |
+| Pix | `DEMO-MVRWP40R`, subtotal R$ 199,80, desconto R$ 9,99 e total R$ 189,81 |
+| Histórico | As três simulações apareceram após recarregar `pedidos.html` |
+| URLs antigas | Produto, categoria, ofertas, pedido, confirmação e demais caminhos redirecionaram às páginas HTML; query da confirmação preservada |
+
+A captura `site-publicado.jpg` registra a Home real no domínio final. A inspeção mobile foi feita localmente em iframe; não foi feita validação em aparelho físico. Os indicadores estruturais não constituem uma comparação pixel a pixel de todas as telas.
+
+Há 25 fotos de produtos e um DPS com ilustração genérica identificada. Categorias sem produtos originais mostram estado vazio. A avaliação/apresentação do aluno e a nota final dependem do professor. Nenhum pagamento, conta, estoque, entrega ou envio de formulário real foi implementado ou prometido.

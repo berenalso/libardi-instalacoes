@@ -1,0 +1,20 @@
+{
+  "site": "https://libardi-instalacoes-html.vercel.app/",
+  "projeto": "libardi-instalacoes-html",
+  "branch": "versao-html-css-js",
+  "commitAplicacaoConferido": "a0df8638145e2142e60b097636b619cff7427864",
+  "statusObservado": "Ready",
+  "telasPublicadasConferidas": 50,
+  "redirecionamentosConferidos": 27,
+  "simulacoes": {
+    "credito": "DEMO-MVRWMS04",
+    "debito": "DEMO-MVRWNSP9",
+    "pix": "DEMO-MVRWP40R"
+  },
+  "mainPreservada": "c08516aee51548982a1e3e0c61b8ad0f7b2f9c8f",
+  "limites": [
+    "Sem aparelho físico",
+    "Fidelidade visual sem comparação pixel a pixel",
+    "Pagamentos e formulários apenas demonstrativos"
+  ]
+}

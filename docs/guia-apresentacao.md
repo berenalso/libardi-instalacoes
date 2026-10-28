@@ -80,7 +80,7 @@ Git registra versões reais. Uma branch permite melhorar o código sem alterar a
 
 Fluxo para novas alterações: `git switch versao-html-css-js`, editar, verificar, `git add`, `git commit -m "Explica a mudança"`, `git push`. Não coloque senhas no código. Só mescle o PR com aprovação.
 
-A Vercel serve os próprios arquivos. Selecione **Other**, raiz do repositório, sem instalação/build, saída `.`. `vercel.json` mantém links antigos e configura a hospedagem. Não precisa de React, Vite, Node ou npm para executar o site publicado. Consulte o README para o passo a passo.
+A Vercel serve os próprios arquivos. Selecione **Other**, raiz do repositório, sem instalação/build, saída `.`. `vercel.json` mantém links antigos e configura a hospedagem. Não precisa de React, Vite, Node ou npm para executar o site publicado. No projeto separado, Settings → Environments → Production → Branch Tracking usa `versao-html-css-js`; assim cada commit nessa branch atualiza a publicação sem alterar a principal. Consulte o README para o passo a passo.
 
 ## Roteiro de demonstração prática (8 a 10 minutos)
 
@@ -93,7 +93,7 @@ A Vercel serve os próprios arquivos. Selecione **Other**, raiz do repositório,
 7. Abra os pedidos demonstrativos e seus detalhes. Explique que não há compra real. Mostre Serviços e a validação de um orçamento.
 8. Reduza a janela para mobile. Mostre navegação inferior, abrir/fechar filtros, carrinho e checkout.
 9. No editor, mostre um formulário HTML, uma media query CSS e as funções `somarCarrinho`, `calcularPagamento`, `salvarEstado`. Abra `/testes/index.html`.
-10. Termine no GitHub: branch, commits e PR. Mostre o endereço da Vercel somente se a publicação estiver confirmada.
+10. Termine no GitHub: branch, commits e [PR #1](https://github.com/berenalso/libardi-instalacoes/pull/1). Abra o [site estático publicado](https://libardi-instalacoes-html.vercel.app/) e explique que o projeto separado acompanha `versao-html-css-js`, sem mesclar na `main`.
 
 ## Perguntas prováveis
 
