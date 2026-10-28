@@ -1,17 +1,22 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#1c1f24" />
-    <meta
-      name="description"
-      content="Libardi Instalações — catálogo demonstrativo de materiais elétricos e serviços de instalação."
-    />
-    <title>Libardi Instalações</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Libardi Instalações: loja demonstrativa de materiais elétricos e serviços. Projeto escolar em HTML, CSS e JavaScript puro.">
+<title>Início — Libardi Instalações</title>
+<link rel="stylesheet" href="/css/estilos.css">
+<script src="/js/dados.js" defer></script>
+<script src="/js/regras.js" defer></script>
+<script src="/js/loja.js" defer></script>
+<script src="/js/catalogo.js" defer></script>
+</head>
+<body data-pagina="index">
+<div id="cabecalho"></div>
+<main id="conteudo" class="home-page"><section class="hero desktop-only"><div><span class="tag">Materiais e serviços elétricos</span><h1>Tudo para a sua instalação elétrica, do material ao serviço</h1><p>Compre fios, tomadas, disjuntores e iluminação ou contrate a equipe Libardi para instalar com segurança.</p><div class="actions"><a class="button primary" href="/catalogo.html">Ver produtos</a><a class="button outline" href="/orcamento.html">Solicitar orçamento</a></div></div><img class="hero-art" src="/imagens/banner.png" width="340" height="260" alt="Raio amarelo sobre fundo azul acinzentado"></section><div class="mobile-only mobile-home-intro"><form class="search-form" action="/catalogo.html" role="search"><input name="q" aria-label="Buscar produtos" placeholder="Buscar produtos"><button aria-label="Pesquisar" type="submit"><svg class="icone" width="21" height="21" aria-hidden="true"><use href="/imagens/icones.svg#search"></use></svg></button></form><section class="mobile-hero"><h1>Sua instalação<br>começa aqui.</h1><p>Materiais e soluções elétricas em um só lugar.</p><a class="button primary" href="/catalogo.html">Explorar catálogo</a></section></div><section class="home-section"><div class="section-heading"><h2><span class="desktop-only">Categorias</span><span class="mobile-only">Compre por categoria</span></h2><a class="desktop-only" href="/explorar.html">Ver todos →</a></div><div id="categorias-desktop" class="category-grid desktop-only"></div><div id="categorias-mobile" class="category-grid mobile-only"></div></section><section class="home-section"><div class="section-heading"><h2><span class="desktop-only">Produtos em destaque</span><span class="mobile-only">Em destaque</span></h2><a class="desktop-only" href="/catalogo.html">Ver todos →</a></div><div class="desktop-featured"><div id="destaques-desktop" class="product-grid"></div></div><div class="mobile-only"><div id="destaques-mobile" class="product-grid"></div><h2 class="spaced">Mais vendidos</h2><div id="mais-vendidos-mobile" class="product-grid"></div></div></section><section class="home-section"><div class="service-callout"><div><h2>Precisa de uma instalação elétrica?</h2><p>Conte o que você precisa e receba um orçamento da equipe Libardi.</p></div><a class="button primary" href="/orcamento.html">Solicitar orçamento</a></div></section></main>
+<div id="rodape"></div>
+<div id="navegacao-mobile"></div>
+<div id="mensagem" role="status" aria-live="polite"></div>
+<noscript><p class="notice">Ative o JavaScript para utilizar o catálogo, o carrinho e os formulários demonstrativos.</p></noscript>
+</body>
 </html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Libardi Instalações: loja demonstrativa de materiais elétricos e serviços. Projeto escolar em HTML, CSS e JavaScript puro.">
+<title>Criar conta — Libardi Instalações</title>
+<link rel="stylesheet" href="/css/estilos.css">
+<script src="/js/dados.js" defer></script>
+<script src="/js/regras.js" defer></script>
+<script src="/js/loja.js" defer></script>
+<script src="/js/conta.js" defer></script>
+</head>
+<body data-pagina="cadastro">
+<div id="cabecalho"></div>
+<main id="conteudo" class="container page"><nav class="breadcrumb" aria-label="Localização"><a href="/index.html">Início</a><span>/</span><span>Criar conta</span></nav><h1>Criar conta</h1><form id="form-conta" class="panel form-panel auth-form"><p class="notice">Formulário demonstrativo. Use dados fictícios. Nenhuma conta ou sessão real será criada; senhas não são armazenadas ou enviadas.</p><label>Nome completo<input name="name" required minlength="3" maxlength="100" autocomplete="off"></label><label>E-mail<input name="email" type="email" required maxlength="200" autocomplete="off"></label><label>Senha de exemplo<input name="password" type="password" required minlength="8" autocomplete="new-password"></label><label>Confirmar senha<input name="confirm" type="password" required minlength="8" autocomplete="new-password"></label><p class="error" id="erro-conta" role="alert" hidden></p><p class="notice" id="sucesso-conta" role="status" hidden></p><button class="button primary">Validar cadastro de exemplo</button><a href="/login.html">Já tem conta? Entrar</a><a href="/perfil.html">Voltar ao perfil</a></form></main>
+<div id="rodape"></div>
+<div id="navegacao-mobile"></div>
+<div id="mensagem" role="status" aria-live="polite"></div>
+<noscript><p class="notice">Ative o JavaScript para utilizar o catálogo, o carrinho e os formulários demonstrativos.</p></noscript>
+</body>
+</html>

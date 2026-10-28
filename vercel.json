@@ -1,18 +1,136 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "vite",
-  "rewrites": [{ "source": "/((?!assets/).*)", "destination": "/index.html" }],
+  "framework": null,
+  "buildCommand": null,
+  "installCommand": null,
+  "outputDirectory": ".",
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/produto/:id",
+      "destination": "/produto.html?id=:id"
+    },
+    {
+      "source": "/categoria/:categoria",
+      "destination": "/catalogo.html?categoria=:categoria"
+    },
+    {
+      "source": "/pedidos/:id",
+      "destination": "/pedido.html?id=:id"
+    },
+    {
+      "source": "/checkout/concluido",
+      "destination": "/confirmacao.html"
+    },
+    {
+      "source": "/orcamento/concluido",
+      "destination": "/orcamento-concluido.html"
+    },
+    {
+      "source": "/ofertas",
+      "destination": "/catalogo.html?ordem=menor-preco"
+    },
+    {
+      "source": "/sobre",
+      "destination": "/sobre.html"
+    },
+    {
+      "source": "/trocas",
+      "destination": "/trocas.html"
+    },
+    {
+      "source": "/favoritos",
+      "destination": "/favoritos.html"
+    },
+    {
+      "source": "/entregas",
+      "destination": "/entregas.html"
+    },
+    {
+      "source": "/pedido",
+      "destination": "/pedido.html"
+    },
+    {
+      "source": "/carrinho",
+      "destination": "/carrinho.html"
+    },
+    {
+      "source": "/pedidos",
+      "destination": "/pedidos.html"
+    },
+    {
+      "source": "/privacidade",
+      "destination": "/privacidade.html"
+    },
+    {
+      "source": "/checkout",
+      "destination": "/checkout.html"
+    },
+    {
+      "source": "/orcamento",
+      "destination": "/orcamento.html"
+    },
+    {
+      "source": "/termos",
+      "destination": "/termos.html"
+    },
+    {
+      "source": "/ajuda",
+      "destination": "/ajuda.html"
+    },
+    {
+      "source": "/login",
+      "destination": "/login.html"
+    },
+    {
+      "source": "/trabalhe-conosco",
+      "destination": "/trabalhe-conosco.html"
+    },
+    {
+      "source": "/catalogo",
+      "destination": "/catalogo.html"
+    },
+    {
+      "source": "/servicos",
+      "destination": "/servicos.html"
+    },
+    {
+      "source": "/cadastro",
+      "destination": "/cadastro.html"
+    },
+    {
+      "source": "/explorar",
+      "destination": "/explorar.html"
+    },
+    {
+      "source": "/produto",
+      "destination": "/produto.html"
+    },
+    {
+      "source": "/pesquisa",
+      "destination": "/pesquisa.html"
+    },
+    {
+      "source": "/perfil",
+      "destination": "/perfil.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
         {
           "key": "Referrer-Policy",
           "value": "strict-origin-when-cross-origin"
         },
-        { "key": "X-Frame-Options", "value": "DENY" }
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
       ]
     }
   ]

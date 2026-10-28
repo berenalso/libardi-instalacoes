@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Libardi Instalações: loja demonstrativa de materiais elétricos e serviços. Projeto escolar em HTML, CSS e JavaScript puro.">
+<title>Central de ajuda — Libardi Instalações</title>
+<link rel="stylesheet" href="/css/estilos.css">
+<script src="/js/dados.js" defer></script>
+<script src="/js/regras.js" defer></script>
+<script src="/js/loja.js" defer></script>
+<script src="/js/informacoes-dados.js" defer></script>
+<script src="/js/informacoes.js" defer></script>
+</head>
+<body data-pagina="ajuda">
+<div id="cabecalho"></div>
+<main id="conteudo" class="container page"><nav class="breadcrumb" aria-label="Localização"><a href="/index.html">Início</a><span>/</span><span>Central de ajuda</span></nav><h1>Central de ajuda</h1><p class="subtitle">Dúvidas sobre pedidos, entregas, trocas e serviços de instalação</p><div class="help-links"><a class="panel" href="/entregas.html"><h2>Pedidos e entregas</h2><p>Saiba como funciona →</p></a><a class="panel" href="/trocas.html"><h2>Trocas e devoluções</h2><p>Saiba como funciona →</p></a><a class="panel" href="/servicos.html"><h2>Serviços e orçamentos</h2><p>Saiba como funciona →</p></a></div><h2 class="spaced">Perguntas frequentes</h2><div class="faq" id="perguntas-frequentes"></div><div class="checkout-grid"><section class="panel"><h2>Fale com a gente</h2><p>(51) 99971-8787</p><p>R. Gen. Daltro Filho, 88 — Centro, Sapiranga/RS</p><p>Informações de contato do protótipo.</p><a class="button secondary" href="tel:+5551999718787">Abrir discador</a></section><form id="form-contato" class="panel form-panel"><p class="notice">Mensagem demonstrativa, sem envio. Use dados fictícios.</p><label>Nome completo<input name="name" required minlength="3" maxlength="100"></label><label>E-mail<input name="email" type="email" required maxlength="200"></label><label>Assunto<input name="subject" required maxlength="100"></label><label>Mensagem<textarea name="message" required minlength="10" maxlength="2000" rows="4"></textarea></label><p id="erro-contato" class="error" role="alert" hidden></p><button class="button primary">Validar mensagem</button><p id="sucesso-contato" class="notice" role="status" hidden>Mensagem validada. Nenhuma informação foi enviada.</p></form></div></main>
+<div id="rodape"></div>
+<div id="navegacao-mobile"></div>
+<div id="mensagem" role="status" aria-live="polite"></div>
+<noscript><p class="notice">Ative o JavaScript para utilizar o catálogo, o carrinho e os formulários demonstrativos.</p></noscript>
+</body>
+</html>
