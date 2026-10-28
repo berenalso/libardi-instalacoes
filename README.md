@@ -1,102 +1,80 @@
-# Libardi Instalações
+# Libardi Instalações — HTML, CSS e JavaScript
 
-Aplicação web demonstrativa de materiais elétricos e serviços, baseada no projeto original do Figma. Interface PT-BR, desktop e mobile, temas claro e escuro.
+Trabalho de Criação de Sites da Escola Técnica Estadual Monteiro Lobato (CIMOL). Loja **demonstrativa** de materiais e serviços elétricos, baseada no [Figma original](https://www.figma.com/design/J8MjYIF1QaSxj94qUcMb8s/Libardi-Instala%C3%A7%C3%B5es?node-id=0-1).
 
-## Executar
+A branch `versao-html-css-js` converte o projeto existente para **HTML5, CSS3 e JavaScript puro**. Não utiliza React, TypeScript, Vite, Tailwind, React Router, Vitest, bibliotecas JavaScript, instalação de pacotes ou compilação. A versão anterior permanece no histórico e na `main`; esta branch só deve ser mesclada após aprovação.
 
-Requer Node.js 22.12+ (ou 24 LTS) e npm.
+Site publicado: [libardi-instalacoes-html.vercel.app](https://libardi-instalacoes-html.vercel.app/). Revisão: [Pull Request #1](https://github.com/berenalso/libardi-instalacoes/pull/1).
+
+## Abrir para estudar
+
+Clone o repositório e selecione a branch:
 
 ```bash
-npm ci
-npm run dev
+git clone https://github.com/berenalso/libardi-instalacoes.git
+cd libardi-instalacoes
+git switch versao-html-css-js
 ```
+
+Abra a pasta em seu editor. Sirva a raiz por HTTP. Se Python já estiver instalado, uma opção é:
 
 ```bash
-npm test
-npm run build
-npm run preview
+python -m http.server 8000
 ```
 
-O servidor informa a URL local. A compilação é gerada em `dist/`.
-
-## Funcionalidades
-
-- 26 produtos tipados, cinco categorias, páginas de produto, descrição, especificações e relacionados.
-- Busca sem diferenciação de acentos, filtros combinados por preço, marca, avaliação, tipo e disponibilidade demonstrativa.
-- Cinco ordenações, incluindo menor/maior preço; vendas e novidades usam uma ordem de exemplo.
-- Carrinho com adição, remoção e quantidades de 1 a 99; valores calculados em centavos.
-- Favoritos, tema e histórico de demonstrações persistidos no LocalStorage.
-- Checkout validado com retirada ou endereço de entrega, revisão e conclusão demonstrativa.
-- Pagamentos demonstrativos: débito à vista, crédito em 1–10 parcelas e Pix com desconto de exemplo; distribuição exata dos centavos.
-- Serviços e formulário de orçamento validado, sem envio real.
-- Perfil, login e cadastro demonstrativos, sem armazenamento de senhas.
-- Pedidos e explicação de oito estados de acompanhamento, sem confirmação de pagamento.
-- Ajuda, FAQ, sobre, privacidade, termos, trocas, entregas e 404.
-- Layout mobile com navegação inferior e ação de compra fixa no detalhe do produto.
+Visite `http://localhost:8000/index.html`. Esse servidor é apenas uma opção para estudo local, não uma dependência do site. Os caminhos começam com `/`; abrir um HTML por duplo clique (`file://`) não reproduz a hospedagem HTTP.
 
 ## Estrutura
 
-- `src/components`: layout e componentes compartilhados.
-- `src/pages`: telas e fluxos.
-- `src/hooks/Store.tsx`: estado compartilhado e persistência local.
-- `src/services/catalog.ts`: busca, filtros, cálculos e validação do carrinho.
-- `src/data`: produtos e serviços.
-- `src/types`: modelos TypeScript.
-- `src/styles.css`: tokens e estilos responsivos; Tailwind integrado pelo Vite.
-- `public/assets`: logo e imagens originais do Figma, fotos complementares e ilustração do DPS.
-- `docs`: inventário de telas, decisões e relatório de validação.
+| Arquivo/pasta | Responsabilidade |
+|---|---|
+| `index.html` | Página inicial, categorias, destaques e serviços |
+| `catalogo.html`, `produto.html` | Filtros, ordenação e detalhes (`?id=cabo25`) |
+| `carrinho.html` | Quantidades, remoção e totais |
+| `checkout.html`, `confirmacao.html` | Validação, pagamentos simulados, revisão e resultado |
+| `favoritos.html`, `explorar.html`, `pesquisa.html` | Favoritos, menu de categorias e busca mobile |
+| `perfil.html`, `login.html`, `cadastro.html` | Perfil e formulários demonstrativos |
+| `pedidos.html`, `pedido.html` | Histórico local e acompanhamento ilustrativo |
+| `servicos.html`, `orcamento.html`, `orcamento-concluido.html` | Serviços e solicitação simulada |
+| `ajuda.html`, `sobre.html`, `privacidade.html`, `termos.html`, `trocas.html`, `entregas.html`, `trabalhe-conosco.html`, `404.html` | Conteúdo institucional e ajuda |
+| `css/estilos.css` | Todos os estilos, temas e regras responsivas |
+| `js/dados.js` | Array de 26 produtos, categorias e serviços |
+| `js/regras.js` | Funções de cálculo, filtros e validação |
+| `js/loja.js` | DOM compartilhado, eventos, tema e LocalStorage |
+| `js/catalogo.js`, `js/carrinho.js`, `js/checkout.js` | Comportamento das páginas de compra |
+| `js/conta.js`, `js/servicos.js`, `js/informacoes*.js` | Demais páginas |
+| `imagens/`, `fontes/` | Imagens, logotipo, ícones SVG estáticos e fontes locais com licenças |
+| `testes/` | Verificações sem bibliotecas; excluídas da Vercel |
+| `docs/` | Auditoria, conformidade, testes e guia de apresentação |
+| `vercel.json` | Hospedagem estática e compatibilidade com URLs anteriores |
 
-## Figma
+## Funcionalidades preservadas
 
-[Arquivo original](https://www.figma.com/design/J8MjYIF1QaSxj94qUcMb8s/Libardi-Instala%C3%A7%C3%B5es?node-id=0-1). A implementação usa a página Site e seus componentes atuais. Nenhuma alteração foi feita no Figma.
+- Catálogo com 26 produtos, preço em reais, imagem, descrição, categoria e especificações.
+- Busca sem diferenciar acentos, filtros de categoria, tipo, marca, preço, avaliação e disponibilidade; ordenação.
+- Favoritos, carrinho com quantidades de 1 a 99, remoção, atualização imediata e persistência.
+- Checkout com dados do cliente, entrega/retirada, validação, revisão e confirmação.
+- Débito, crédito de 1 a 10 parcelas sem juros e Pix com desconto demonstrativo de 5%.
+- Histórico local dos últimos 20 pedidos simulados, serviços, formulários e temas claro/escuro.
+- Layout responsivo com navegação inferior e filtros mobile.
 
-Poppins e Inter são hospedadas junto do próprio build. As quatro fotos disponíveis no protótipo foram preservadas; outras 21 foram obtidas de fontes de produtos e otimizadas em WebP. O DPS usa uma ilustração genérica identificada, porque a foto exata estava indisponível. As fontes estão em `docs/product-photo-sources.json`. Preços e avaliações são dados demonstrativos do arquivo.
+O carrinho, favoritos, tema e pedidos usam a chave `libardi:v1`, preservada da versão anterior **quando ambos são abertos na mesma origem**. Outro domínio/porta tem outro LocalStorage. Endereço, nome, e-mail, telefone e senhas não são persistidos. Não há cobrança, autenticação, estoque, rastreamento, frete calculado nem envio de formulários reais. Pix não gera QR Code ou chave válida. Use dados fictícios.
 
-## Persistência e privacidade
+Os valores ficam em **centavos inteiros**. As parcelas distribuem eventuais centavos restantes entre as primeiras prestações, para a soma corresponder exatamente ao total. Os 26 produtos foram preservados: 25 fotos e uma ilustração genérica de DPS claramente identificada. Fixadores e Eletrodutos continuam com estado vazio porque não havia produtos dessas categorias no catálogo original.
 
-A chave `libardi:v1` salva carrinho, favoritos, tema e referências locais de demonstração. Não há servidor de autenticação, conta real, cobrança, estoque, transporte, e-mail ou atendimento integrado. Dados pessoais digitados nos formulários ficam apenas no estado temporário da página e não são enviados nem persistidos. Use dados fictícios nos testes.
+## Testes e apresentação
 
-Os dados locais podem ser apagados em Política de privacidade. A aplicação trata JSON inválido, itens desconhecidos e quantidades inválidas. Não há chaves ou variáveis de ambiente necessárias nesta versão.
+Abra `/testes/index.html` no servidor local: **37 verificações de regras**, sem Vitest ou outra biblioteca. A página `/testes/responsividade.html` permite inspecionar as páginas em larguras diferentes. Veja os resultados e limites em [docs/validacao.md](docs/validacao.md), a tabela dos 11 critérios em [docs/rubrica-avaliacao.md](docs/rubrica-avaliacao.md) e as explicações com roteiro em [docs/guia-apresentacao.md](docs/guia-apresentacao.md).
 
-## Vercel
+## Publicar na Vercel como site estático
 
-1. Importe o repositório na conta desejada da Vercel.
-2. Framework: Vite; instalação: `npm ci`; build: `npm run build`; diretório: `dist`.
-3. Nenhuma variável de ambiente é necessária.
-4. `vercel.json` configura retorno à SPA em rotas diretas e cabeçalhos básicos de segurança.
-5. Após o deploy, verificar `/produto/cabo25`, `/carrinho`, `/checkout` e uma rota inexistente, inclusive após recarregar.
+1. Importe este repositório e selecione **`versao-html-css-js`** para uma publicação separada ou de prévia. Não mescle na `main` para testar. No projeto separado `libardi-instalacoes-html`, em Settings → Environments → Production → Branch Tracking, use `versao-html-css-js` para que novas alterações dessa branch atualizem seu domínio.
+2. Framework Preset: **Other**. Root Directory: raiz do repositório.
+3. Não configure comandos de instalação ou build. Diretório de saída: **`.`** (raiz).
+4. Use o `vercel.json` desta branch: `framework: null`, `buildCommand: null`, `installCommand: null`, `outputDirectory: "."`. Não há variáveis de ambiente.
+5. Publique e confira a branch/commit indicado no painel antes de testar. Não aceite a detecção da versão antiga como Vite.
+6. Teste Home, catálogo, `/produto.html?id=cabo25`, carrinho, checkout, recarregamento e uma URL anterior como `/produto/cabo25`.
 
-A publicação deve ocorrer após os testes. O relatório registra o que foi executado localmente e separa verificações de produção ainda pendentes.
+A `.vercelignore` exclui documentação, testes e arquivos de trabalho. As páginas usam URLs `.html`; os redirecionamentos mantêm links antigos conhecidos. Em um servidor HTTP simples, utilize os links `.html`, pois os redirecionamentos são específicos da Vercel. Não há fallback de SPA.
 
-## Próximas integrações
-
-Para operar comercialmente: backend de catálogo/estoque, autenticação segura, banco de dados, pedidos, gateway de pagamento, frete, nota fiscal e envio de solicitações. Validar os contatos e condições da empresa, substituir a ilustração do DPS pela foto exata e revisar o conteúdo institucional antes da ativação comercial.
-
-## Preparação para a avaliação
-
-Consulte `docs/rubrica-avaliacao.md` para a conferência dos 11 critérios e `docs/guia-apresentacao.md` para estudar os códigos e praticar a demonstração.
-
-## Auditoria e evidências da revisão
-
-- [Auditoria inicial, antes das alterações](docs/auditoria-inicial.md).
-- [Conformidade dos 11 critérios](docs/rubrica-avaliacao.md).
-- [Relatório dos testes executados e pendências](docs/validacao.md).
-- [Guia de código e roteiro de apresentação](docs/guia-apresentacao.md).
-
-A revisão reforçou a validação de quantidades e endereço, completou a confirmação com número fictício/produtos/método/total e corrigiu anúncios de parcelamento com centavos diferentes. O endereço de entrega aparece por padrão; retirada segue disponível. Há 23 testes de regras em três arquivos. A confirmação pode ser recarregada com sua referência local, sem armazenar dados pessoais.
-
-O auxiliar `/qa/` funciona no servidor de desenvolvimento e compara cinco larguras. Ele não integra a compilação normal. Seu painel mede o documento de cada tela, e as interações continuam sendo verificadas na aplicação.
-
-**Situação da publicação:** Git local atualizado; envio ao GitHub e deploy na Vercel ainda dependem de acesso e não foram confirmados. Nenhum link público final deve ser presumido.
-
-O ZIP de entrega inclui `libardi-history.bundle`, exportado do histórico Git real. Para recuperar esse histórico em outra pasta:
-
-```bash
-git clone libardi-history.bundle libardi-com-historico
-cd libardi-com-historico
-npm ci
-npm test
-npm run build
-```
-
-Isso não publica o código. O envio exige configurar o remote de um repositório autorizado e acessível e executar `git push`. Não há credenciais dentro do pacote.
+Documentação oficial: [configuração de projeto](https://vercel.com/docs/project-configuration/vercel-json) e [configuração de builds](https://vercel.com/docs/builds/configure-a-build).

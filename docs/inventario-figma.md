@@ -35,7 +35,7 @@ A página Identidade Visual contém fundações, componentes e versões anterior
 - Temas por tokens globais com preferência persistida.
 - Quatro fotos de produtos estavam disponíveis: cabo25, tomada10, bipolar e painel. Para atender à atividade escolar, foram acrescentadas 21 fotos externas e uma ilustração genérica de DPS identificada, sem alterar o Figma.
 - Logotipo e ilustração do banner foram exportados do Figma.
-- Lucide React para ícones, conforme a preferência tecnológica do pedido.
+- Na conversão, os mesmos desenhos dos ícones foram preservados em um sprite SVG estático (`imagens/icones.svg`), com licença. Não há biblioteca JavaScript de ícones.
 - Conta, envio de formulários e checkout são demonstrativos. O acompanhamento explica oito estados sem confirmar pagamentos nem movimentar compras.
 - Conteúdo institucional foi ajustado à operação efetiva desta demonstração, evitando garantias, métricas comerciais e promessas de atendimento fictícias.
 

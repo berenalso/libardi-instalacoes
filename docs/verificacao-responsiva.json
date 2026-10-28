@@ -1,0 +1,47 @@
+{
+  "ambiente": "Navegador Chrome, HTTP estático local, iframe de altura 932 px",
+  "resultados": [
+    {
+      "larguraIframe": 320,
+      "larguraUtil": 305,
+      "telas": 50,
+      "rolagemHorizontal": 0,
+      "imagensQuebradas": 0,
+      "linksVazios": 0
+    },
+    {
+      "larguraIframe": 390,
+      "larguraUtil": 375,
+      "telas": 50,
+      "rolagemHorizontal": 0,
+      "imagensQuebradas": 0,
+      "linksVazios": 0
+    },
+    {
+      "larguraIframe": 430,
+      "larguraUtil": 415,
+      "telas": 50,
+      "rolagemHorizontal": 0,
+      "imagensQuebradas": 0,
+      "linksVazios": 0
+    },
+    {
+      "larguraIframe": 768,
+      "larguraUtil": 753,
+      "telas": 50,
+      "rolagemHorizontal": 0,
+      "imagensQuebradas": 0,
+      "linksVazios": 0
+    },
+    {
+      "larguraIframe": 1440,
+      "larguraUtil": 1425,
+      "telas": 50,
+      "rolagemHorizontal": 0,
+      "imagensQuebradas": 0,
+      "linksVazios": 0
+    }
+  ],
+  "totalCarregamentos": 250,
+  "limite": "Indicadores estruturais, não teste de cada ação em todas as telas. Fluxos interativos detalhados em validacao.md."
+}

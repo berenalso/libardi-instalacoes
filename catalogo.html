@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Libardi Instalações: loja demonstrativa de materiais elétricos e serviços. Projeto escolar em HTML, CSS e JavaScript puro.">
+<title>Catálogo de produtos — Libardi Instalações</title>
+<link rel="stylesheet" href="/css/estilos.css">
+<script src="/js/dados.js" defer></script>
+<script src="/js/regras.js" defer></script>
+<script src="/js/loja.js" defer></script>
+<script src="/js/catalogo.js" defer></script>
+</head>
+<body data-pagina="catalogo">
+<div id="cabecalho"></div>
+<main id="conteudo" class="container page"><nav class="breadcrumb" aria-label="Localização"><a href="/index.html">Início</a><span>/</span><span>Catálogo de produtos</span></nav><h1>Catálogo de produtos</h1><p class="subtitle">Preços, disponibilidade e avaliações demonstrativos.</p><div class="catalog-toolbar"><span id="contagem-produtos" aria-live="polite"></span><button type="button" class="button secondary filter-toggle" id="abrir-filtros" aria-controls="painel-filtros" aria-expanded="false"><svg class="icone" width="18" height="18" aria-hidden="true"><use href="/imagens/icones.svg#sliders-horizontal"></use></svg>Filtros</button><label class="sort-label">Ordenar por<select id="ordem" aria-label="Ordenar por"><option value="">Relevância</option><option value="menor-preco">Menor preço</option><option value="maior-preco">Maior preço</option><option value="mais-vendidos">Mais vendidos (exemplo)</option><option value="avaliacao">Melhor avaliados</option><option value="novidades">Novidades (exemplo)</option></select></label></div><div class="catalog-layout"><aside class="filters panel" id="painel-filtros" aria-label="Filtros de produtos"><h2>Departamentos</h2><a href="/catalogo.html">Todos os produtos</a><a href="/catalogo.html?categoria=fios-e-cabos">Fios e cabos</a><a href="/catalogo.html?categoria=tomadas-e-interruptores">Tomadas e interruptores</a><a href="/catalogo.html?categoria=iluminacao">Iluminação</a><a href="/catalogo.html?categoria=disjuntores-e-quadros">Disjuntores e quadros</a><a href="/catalogo.html?categoria=ferramentas-e-acessorios">Ferramentas e acessórios</a><form id="filtros"><label>Buscar por nome<input name="q" id="busca-filtro" placeholder="Nome do produto"></label><fieldset><legend>Faixa de preço (R$)</legend><div class="price-inputs"><label>Mínimo<input name="min" aria-label="Preço mínimo" type="number" min="0" step="0.01"></label><label>Máximo<input name="max" aria-label="Preço máximo" type="number" min="0" step="0.01"></label></div></fieldset><label>Marca<select name="marca" id="marca"><option value="">Todas</option></select></label><label>Avaliação de exemplo<select name="nota"><option value="">Todas</option><option value="4.5">4,5 ou mais</option><option value="4.8">4,8 ou mais</option></select></label><label>Tipo de produto<select name="tipo" id="tipo"><option value="">Todos</option></select></label><label class="check"><input type="checkbox" name="disponivel" value="sim">Disponível (simulado)</label><button type="button" id="limpar-filtros" class="button outline">Limpar filtros</button><button type="button" id="fechar-filtros" class="button primary mobile-only">Ver produtos</button></form></aside><div id="resultado-catalogo"><div class="product-grid" id="produtos-catalogo"></div></div></div></main>
+<div id="rodape"></div>
+<div id="navegacao-mobile"></div>
+<div id="mensagem" role="status" aria-live="polite"></div>
+<noscript><p class="notice">Ative o JavaScript para utilizar o catálogo, o carrinho e os formulários demonstrativos.</p></noscript>
+</body>
+</html>

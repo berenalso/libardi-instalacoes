@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Libardi Instalações: loja demonstrativa de materiais elétricos e serviços. Projeto escolar em HTML, CSS e JavaScript puro.">
+<title>Solicitar orçamento — Libardi Instalações</title>
+<link rel="stylesheet" href="/css/estilos.css">
+<script src="/js/dados.js" defer></script>
+<script src="/js/regras.js" defer></script>
+<script src="/js/loja.js" defer></script>
+<script src="/js/servicos.js" defer></script>
+</head>
+<body data-pagina="orcamento">
+<div id="cabecalho"></div>
+<main id="conteudo" class="container page"><nav class="breadcrumb" aria-label="Localização"><a href="/index.html">Início</a><span>/</span><span>Solicitar orçamento</span></nav><h1>Solicitar orçamento</h1><p class="subtitle">Conte o que você precisa.</p><div class="checkout-grid"><form id="form-orcamento" class="panel form-panel"><p class="notice">Envio demonstrativo. Use dados fictícios: o formulário não envia informações nem agenda visitas.</p><label>Nome completo<input name="name" required minlength="3" maxlength="100"></label><div class="form-row"><label>Telefone / WhatsApp<input name="phone" type="tel" required maxlength="20" placeholder="(51) 99999-9999"></label><label>E-mail<input name="email" type="email" required maxlength="200"></label></div><label>Serviço<select name="service" id="servico"></select></label><label>Data preferida (opcional)<input name="date" type="date" id="data-servico"></label><label>Endereço<input name="address" required minlength="5" maxlength="200" placeholder="Rua, número e complemento"></label><label>CEP<input name="cep" required inputmode="numeric" maxlength="9" placeholder="00000-000"></label><label>Descrição da necessidade<textarea name="description" required minlength="15" maxlength="2000" rows="5" placeholder="Descreva o serviço de que você precisa..."></textarea></label><p role="alert" class="error" id="erro-orcamento" hidden></p><div class="actions"><a class="button outline" href="/servicos.html">Cancelar</a><button class="button primary">Validar solicitação demonstrativa</button></div></form><aside class="panel"><h2>Como funciona</h2><ol class="process-list"><li><strong>Você descreve a necessidade</strong><p>Com os detalhes do serviço e endereço.</p></li><li><strong>A equipe avalia</strong><p>O envio real depende de uma integração de atendimento.</p></li><li><strong>Você recebe uma proposta</strong><p>Somente após contato real e avaliação do serviço.</p></li></ol><a class="button secondary" href="/ajuda.html">Central de ajuda</a></aside></div></main>
+<div id="rodape"></div>
+<div id="navegacao-mobile"></div>
+<div id="mensagem" role="status" aria-live="polite"></div>
+<noscript><p class="notice">Ative o JavaScript para utilizar o catálogo, o carrinho e os formulários demonstrativos.</p></noscript>
+</body>
+</html>
