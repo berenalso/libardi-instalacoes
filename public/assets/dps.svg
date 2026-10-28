@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="Ilustração genérica de um dispositivo de proteção contra surtos">
+<rect width="400" height="400" rx="16" fill="#f4f6f8"/>
+<path d="M137 59h126v281H137z" fill="#d9dee3" stroke="#7d8995" stroke-width="3"/>
+<path d="M151 43h98v39h-98zM151 319h98v39h-98z" fill="#b8c3cd" stroke="#7d8995" stroke-width="3"/>
+<circle cx="200" cy="63" r="10" fill="#596673"/><path d="M193 63h14" stroke="#e9eef2" stroke-width="3"/>
+<circle cx="200" cy="338" r="10" fill="#596673"/><path d="M193 338h14" stroke="#e9eef2" stroke-width="3"/>
+<rect x="147" y="87" width="106" height="228" rx="8" fill="#263544"/>
+<rect x="178" y="108" width="44" height="16" rx="4" fill="#72b590"/>
+<path d="M200 150l42 17v42c0 30-42 55-42 55s-42-25-42-55v-42z" fill="#394e60" stroke="#d9dee3" stroke-width="3"/>
+<path d="M205 171l-23 39h16l-7 31 29-44h-19z" fill="#f5c400"/>
+<text x="200" y="293" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="white">DPS</text>
+</svg>

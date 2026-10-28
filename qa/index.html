@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verificação responsiva — Libardi</title>
+<style>
+body{margin:0;background:#e5e7eb;color:#1c1f24;font:14px Arial}form{padding:16px;display:flex;gap:16px;flex-wrap:wrap;background:white;position:sticky;top:0;z-index:1}select,button{padding:10px}#frames{display:flex;gap:16px;align-items:flex-start;padding:16px;width:max-content}section{background:white}h2{margin:0;padding:10px;font-size:16px}iframe{display:block;border:0;height:932px}#results{max-height:120px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}
+</style>
+<form id="controls">
+  <label>Página <select id="route"></select></label>
+  <label>Visualização <select id="mode"><option value="single">Tela individual</option><option value="matrix">Cinco larguras</option></select></label>
+  <label>Largura <select id="width"><option>320</option><option>390</option><option selected>430</option><option>768</option><option>1440</option></select></label>
+  <button type="submit">Abrir página</button>
+  <button type="button" id="measure">Medir layout</button>
+</form>
+<pre id="results" role="status"></pre>
+<div id="frames"></div>
+<script type="module">
+import products from '/src/data/products.json';
+const paths=['/','/catalogo','/explorar','/pesquisa','/favoritos','/carrinho','/checkout','/checkout/concluido','/perfil','/login','/cadastro','/pedidos','/pedidos/exemplo','/servicos','/orcamento','/orcamento/concluido','/ajuda','/sobre','/trocas','/privacidade','/termos','/entregas','/trabalhe-conosco','/nao-existe','/categoria/fios-e-cabos','/categoria/tomadas-e-interruptores','/categoria/iluminacao','/categoria/disjuntores-e-quadros','/categoria/ferramentas-e-acessorios',...products.map(p=>'/produto/'+p.id)];
+for(const path of paths){const option=document.createElement('option');option.value=path;option.textContent=path;document.querySelector('#route').append(option)}
+document.querySelector('#controls').onsubmit=e=>{e.preventDefault();render()};
+document.querySelector('#width').onchange=()=>{if(document.querySelector('#mode').value==='single')document.querySelector('iframe').width=document.querySelector('#width').value};
+function render(){const widths=document.querySelector('#mode').value==='matrix'?[320,390,430,768,1440]:[Number(document.querySelector('#width').value)];const area=document.querySelector('#frames');area.replaceChildren();for(const width of widths){const section=document.createElement('section');const heading=document.createElement('h2');heading.textContent=width+' px';const frame=document.createElement('iframe');frame.width=width;frame.height=932;frame.title='Loja em '+width+' px';frame.src=document.querySelector('#route').value;section.append(heading,frame);area.append(section)}}render();
+document.querySelector('#measure').onclick=async()=>{
+ const result=[];
+ for(const frame of document.querySelectorAll('iframe')){
+  const doc=frame.contentDocument;
+  if(!doc?.querySelector('main')){result.push({width:frame.width,error:'Página ainda não carregada'});continue}
+  await doc.fonts.ready;
+  const main=doc.querySelector('main');
+  result.push({route:frame.getAttribute('src'),width:Number(frame.width),viewport:doc.documentElement.clientWidth,scroll:doc.documentElement.scrollWidth,title:main.querySelector('h1')?.textContent,theme:doc.documentElement.dataset.theme,images:[...main.querySelectorAll('img')].map(i=>({src:i.getAttribute('src'),complete:i.complete,loaded:i.naturalWidth>0})),cards:[...main.querySelectorAll('.product-card')].map(c=>Math.round(c.getBoundingClientRect().height))});
+ }
+ document.querySelector('#results').textContent=JSON.stringify(result);
+};
+</script>
+</html>

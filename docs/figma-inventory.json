@@ -1,0 +1,1001 @@
+[
+  {
+    "id": "136:35294",
+    "name": "Desktop — Claro e Escuro / temas por variáveis",
+    "type": "SECTION",
+    "width": 26700,
+    "height": 22222,
+    "children": [
+      {
+        "id": "24:662",
+        "name": "Home",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2069
+      },
+      {
+        "id": "93:16060",
+        "name": "Categoria / Fios e cabos",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1874
+      },
+      {
+        "id": "93:16379",
+        "name": "Categoria / Tomadas e interruptores",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1874
+      },
+      {
+        "id": "93:16698",
+        "name": "Categoria / Iluminação",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1874
+      },
+      {
+        "id": "93:17017",
+        "name": "Categoria / Disjuntores e quadros",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1874
+      },
+      {
+        "id": "93:17336",
+        "name": "Categoria / Ferramentas e acessórios",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1874
+      },
+      {
+        "id": "93:17691",
+        "name": "Produto / cabo15 / Cabo flexível SIL 1,5 mm² preto — 100 m",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:17970",
+        "name": "Produto / cabo25 / Cabo flexível 2,5 mm² azul — 100 m",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:18249",
+        "name": "Produto / cabo4 / Cabo flexível SIL 4 mm² vermelho — 100 m",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:18528",
+        "name": "Produto / cabopp / Cabo PP Cobrecom 3 × 2,5 mm² preto — 50 m",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:18807",
+        "name": "Produto / paralelo / Fio paralelo Megatron 2 × 1,5 mm² branco — 100 m",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:19086",
+        "name": "Produto / tomada10 / Tomada 2P+T 10 A branca — módulo",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:19365",
+        "name": "Produto / tomada20 / Tomada Tramontina Liz 2P+T 20 A branca",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:19644",
+        "name": "Produto / simples / Interruptor simples Pial Plus+ 10 A branco",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:19923",
+        "name": "Produto / duplo / Interruptor duplo Tramontina Liz 10 A branco",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:20202",
+        "name": "Produto / conjunto / Conjunto Soprano Revitá interruptor + tomada 10 A",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:20481",
+        "name": "Produto / lampada / Lâmpada LED Taschibra TKL 60 9 W 6500 K",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:20760",
+        "name": "Produto / painel / Painel LED de embutir 18 W 6500 K",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:21039",
+        "name": "Produto / spot / Spot LED Avant de embutir redondo 7 W 6500 K",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:21318",
+        "name": "Produto / refletor / Refletor Blumenau LED Tech Pro 50 W preto",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:21597",
+        "name": "Produto / luminaria / Luminária Avant Slim de sobrepor 18 W — 50 cm",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:21876",
+        "name": "Produto / mono / Disjuntor Eletromar monopolar DIN C16 — 16 A",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:22155",
+        "name": "Produto / bipolar / Disjuntor bipolar DIN C32 — 32 A",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:22434",
+        "name": "Produto / quadro / Quadro Steck Ouro Box 12 módulos DIN — embutir",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:22713",
+        "name": "Produto / dr / Dispositivo DR Soprano DRS-L bipolar 63 A 30 mA",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:22992",
+        "name": "Produto / dps / DPS Tekle classe II 20 kA 275 V — 1 polo",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:23271",
+        "name": "Produto / alicate / Alicate universal Tramontina 8″ isolado 1000 V",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:23550",
+        "name": "Produto / chave / Chave de fenda Tramontina VDE 6 × 100 mm",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:23829",
+        "name": "Produto / multimetro / Multímetro digital Minipa ET-1002 portátil",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:24108",
+        "name": "Produto / fita / Fita isolante 3M Highland preta — 19 mm × 20 m",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:24387",
+        "name": "Produto / caixa / Caixa de passagem Mondiale PVC — 10 × 10 cm",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "93:24666",
+        "name": "Produto / conector / Conector WAGO 221-413 de alavanca — 3 vias",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "95:15482",
+        "name": "Carrinho / interativo",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1269
+      },
+      {
+        "id": "97:15614",
+        "name": "Checkout / demonstração",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1406
+      },
+      {
+        "id": "97:15941",
+        "name": "Checkout / simulação concluída",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 849
+      },
+      {
+        "id": "105:16059",
+        "name": "Explorar / produtos, serviços e conta",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1250
+      },
+      {
+        "id": "106:16197",
+        "name": "Revisão / etapa anterior — histórico",
+        "type": "FRAME",
+        "width": 1280,
+        "height": 2218
+      },
+      {
+        "id": "115:17059",
+        "name": "Pesquisa / sugestões",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1211
+      },
+      {
+        "id": "115:17218",
+        "name": "Favoritos / lista e estado vazio",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1232
+      },
+      {
+        "id": "115:18388",
+        "name": "Resultados / Menor preço",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 4703
+      },
+      {
+        "id": "115:19538",
+        "name": "Resultados / Maior preço",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 4703
+      },
+      {
+        "id": "115:20688",
+        "name": "Resultados / Mais vendidos",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 4703
+      },
+      {
+        "id": "115:21838",
+        "name": "Resultados / Melhor avaliados",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 4703
+      },
+      {
+        "id": "115:22988",
+        "name": "Resultados / Novidades",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 4703
+      },
+      {
+        "id": "116:22287",
+        "name": "Filtros / painel",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2287
+      },
+      {
+        "id": "116:22585",
+        "name": "Perfil / conta demonstrativa",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1053
+      },
+      {
+        "id": "116:22736",
+        "name": "Pedidos / meus pedidos",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1107
+      },
+      {
+        "id": "116:22885",
+        "name": "Conta / login",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1001
+      },
+      {
+        "id": "116:23040",
+        "name": "Conta / cadastro",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1171
+      },
+      {
+        "id": "116:23203",
+        "name": "Serviços / instalações elétricas",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "116:23441",
+        "name": "Pedido / Pedido realizado",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1679
+      },
+      {
+        "id": "116:23741",
+        "name": "Pedido / Pagamento confirmado",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1679
+      },
+      {
+        "id": "116:24041",
+        "name": "Pedido / Preparando pedido",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1679
+      },
+      {
+        "id": "116:24341",
+        "name": "Pedido / Pedido enviado",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1679
+      },
+      {
+        "id": "116:24641",
+        "name": "Pedido / Saiu para entrega",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1679
+      },
+      {
+        "id": "116:24941",
+        "name": "Pedido / Entregue",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1679
+      },
+      {
+        "id": "116:25241",
+        "name": "Pedido / Pedido cancelado",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1679
+      },
+      {
+        "id": "116:25541",
+        "name": "Pedido / Aguardando pagamento",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1679
+      },
+      {
+        "id": "135:35294",
+        "name": "Revisão / Mobile iPhone 15 Pro Max e temas / 26 out 2026",
+        "type": "FRAME",
+        "width": 1280,
+        "height": 3508
+      }
+    ]
+  },
+  {
+    "id": "136:35295",
+    "name": "Mobile 430 × 932 — Claro e Escuro / temas por variáveis",
+    "type": "SECTION",
+    "width": 4900,
+    "height": 7700,
+    "children": [
+      {
+        "id": "121:24532",
+        "name": "Mobile / Home",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "121:24715",
+        "name": "Mobile / Menu e categorias",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "121:24796",
+        "name": "Mobile / Pesquisa / sugestões",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "121:24872",
+        "name": "Mobile / Perfil",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "121:24946",
+        "name": "Mobile / Login",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "121:25020",
+        "name": "Mobile / Cadastro",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "121:25102",
+        "name": "Mobile / Serviços",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "122:25048",
+        "name": "Mobile / Categoria / Fios e cabos",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "122:25256",
+        "name": "Mobile / Categoria / Tomadas e interruptores",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "122:25463",
+        "name": "Mobile / Categoria / Iluminação",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "122:25670",
+        "name": "Mobile / Categoria / Disjuntores e quadros",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "122:25877",
+        "name": "Mobile / Categoria / Ferramentas e acessórios",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "122:26112",
+        "name": "Mobile / Resultados / Menor preço",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "122:26923",
+        "name": "Mobile / Resultados / Maior preço",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "122:27734",
+        "name": "Mobile / Resultados / Mais vendidos",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "122:28545",
+        "name": "Mobile / Resultados / Melhor avaliados",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "122:29356",
+        "name": "Mobile / Resultados / Novidades",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "123:29466",
+        "name": "Mobile / Filtros",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "123:29678",
+        "name": "Mobile / Favoritos",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:29591",
+        "name": "Mobile / Carrinho",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:30140",
+        "name": "Mobile / Confirmação do pedido",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:30208",
+        "name": "Mobile / Checkout",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:30447",
+        "name": "Mobile / Produto / cabo15",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:30605",
+        "name": "Mobile / Produto / cabo25",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:30762",
+        "name": "Mobile / Produto / cabo4",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:30919",
+        "name": "Mobile / Produto / cabopp",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:31076",
+        "name": "Mobile / Produto / paralelo",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:31233",
+        "name": "Mobile / Produto / tomada10",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:31390",
+        "name": "Mobile / Produto / tomada20",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:31547",
+        "name": "Mobile / Produto / simples",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:31704",
+        "name": "Mobile / Produto / duplo",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:31861",
+        "name": "Mobile / Produto / conjunto",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:32018",
+        "name": "Mobile / Produto / lampada",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:32175",
+        "name": "Mobile / Produto / painel",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:32332",
+        "name": "Mobile / Produto / spot",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:32489",
+        "name": "Mobile / Produto / refletor",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:32646",
+        "name": "Mobile / Produto / luminaria",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:32803",
+        "name": "Mobile / Produto / mono",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:32960",
+        "name": "Mobile / Produto / bipolar",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:33117",
+        "name": "Mobile / Produto / quadro",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:33274",
+        "name": "Mobile / Produto / dr",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:33431",
+        "name": "Mobile / Produto / dps",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:33588",
+        "name": "Mobile / Produto / alicate",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:33745",
+        "name": "Mobile / Produto / chave",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:33902",
+        "name": "Mobile / Produto / multimetro",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:34059",
+        "name": "Mobile / Produto / fita",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:34216",
+        "name": "Mobile / Produto / caixa",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:34373",
+        "name": "Mobile / Produto / conector",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:34530",
+        "name": "Mobile / Meus pedidos",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:34758",
+        "name": "Mobile / Pedido / Pedido realizado",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:35012",
+        "name": "Mobile / Pedido / Pagamento confirmado",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:35266",
+        "name": "Mobile / Pedido / Preparando pedido",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:35520",
+        "name": "Mobile / Pedido / Pedido enviado",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:35774",
+        "name": "Mobile / Pedido / Saiu para entrega",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:36028",
+        "name": "Mobile / Pedido / Entregue",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:36282",
+        "name": "Mobile / Pedido / Pedido cancelado",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "124:36536",
+        "name": "Mobile / Pedido / Aguardando pagamento",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      }
+    ]
+  },
+  {
+    "id": "136:35296",
+    "name": "Desktop — Entradas em modo escuro",
+    "type": "SECTION",
+    "width": 4920,
+    "height": 2386,
+    "children": [
+      {
+        "id": "133:34231",
+        "name": "Desktop — Escuro / Home",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2069
+      },
+      {
+        "id": "133:34645",
+        "name": "Desktop — Escuro / Produto",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 2016
+      },
+      {
+        "id": "133:34985",
+        "name": "Desktop — Escuro / Carrinho",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1269
+      }
+    ]
+  },
+  {
+    "id": "136:35297",
+    "name": "Mobile — Entradas em modo escuro",
+    "type": "SECTION",
+    "width": 1790,
+    "height": 1200,
+    "children": [
+      {
+        "id": "133:35711",
+        "name": "Mobile — Escuro / Home",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "133:35923",
+        "name": "Mobile — Escuro / Produto",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      },
+      {
+        "id": "133:36102",
+        "name": "Mobile — Escuro / Carrinho",
+        "type": "FRAME",
+        "width": 430,
+        "height": 932
+      }
+    ]
+  },
+  {
+    "id": "147:35018",
+    "name": "Mobile / iPhone 15 Pro Max / componentes",
+    "type": "SECTION",
+    "width": 2500,
+    "height": 1700,
+    "children": [
+      {
+        "id": "147:35028",
+        "name": "Libardi / Mobile 430 / Status",
+        "type": "COMPONENT",
+        "width": 430,
+        "height": 59
+      },
+      {
+        "id": "147:35046",
+        "name": "Libardi / Mobile 430 / Cabeçalho",
+        "type": "COMPONENT",
+        "width": 430,
+        "height": 60
+      },
+      {
+        "id": "147:35074",
+        "name": "Libardi / Mobile 430 / Navegação inferior",
+        "type": "COMPONENT",
+        "width": 430,
+        "height": 83
+      },
+      {
+        "id": "147:35088",
+        "name": "Libardi / Mobile 430 / Card de produto",
+        "type": "COMPONENT",
+        "width": 189,
+        "height": 348
+      },
+      {
+        "id": "196:28867",
+        "name": "Libardi / Alternar tema / compacto",
+        "type": "COMPONENT",
+        "width": 44,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "id": "202:34082",
+    "name": "Desktop — Páginas auxiliares / Claro e Escuro",
+    "type": "SECTION",
+    "width": 6500,
+    "height": 4500,
+    "children": [
+      {
+        "id": "30:1154",
+        "name": "Solicitação de orçamento",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1194
+      },
+      {
+        "id": "30:1431",
+        "name": "Orçamento solicitado",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1192
+      },
+      {
+        "id": "51:2400",
+        "name": "Central de ajuda",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1582
+      },
+      {
+        "id": "65:5925",
+        "name": "Erro 404",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1119
+      },
+      {
+        "id": "65:6097",
+        "name": "Sobre nós",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1627
+      },
+      {
+        "id": "66:6555",
+        "name": "Trocas e devoluções",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1665
+      },
+      {
+        "id": "66:6755",
+        "name": "Política de privacidade",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1705
+      },
+      {
+        "id": "66:6964",
+        "name": "Termos de uso",
+        "type": "FRAME",
+        "width": 1440,
+        "height": 1711
+      }
+    ]
+  }
+]
