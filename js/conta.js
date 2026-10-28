@@ -11,7 +11,7 @@ if (paginaConta === 'login' || paginaConta === 'cadastro') {
     document.getElementById('erro-conta').hidden = !erro;
     document.getElementById('sucesso-conta').hidden = true;
     if (erro) return;
-    document.getElementById('sucesso-conta').textContent = 'Formulário validado. ' + (paginaConta === 'cadastro' ? 'Nenhuma conta foi criada.' : 'Nenhuma autenticação foi realizada.') + ' O backend ainda precisa ser conectado.';
+    document.getElementById('sucesso-conta').textContent = 'Formulário validado. ' + (paginaConta === 'cadastro' ? 'Nenhuma conta foi criada.' : 'Nenhuma autenticação foi realizada.') + ' Esta é apenas uma demonstração.';
     document.getElementById('sucesso-conta').hidden = false;
     formulario.reset();
   });
